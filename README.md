@@ -20,8 +20,14 @@ interface GamerKeyboard extends KeyBoard, Colorful {}
 // w/ Intersection Types
 type GamerKeyboard = KeyBoard & Colorful;
 
+// ✅
 const gamerKeyboard: GamerKeyboard = {
   rgb: true,
   mechanical: true,
+};
+
+// ❌
+const keyboard: GamerKeyboard = {
+  mechanical: false,
 };
 ```
